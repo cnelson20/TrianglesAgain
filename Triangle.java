@@ -19,9 +19,9 @@ public class Triangle {
   }
 
   public String classify() {
-    double a = v1.distanceTo(v2);
-    double b = v2.distanceTo(v3);
-    double c = v3.distanceTo(v1);
+    double a = roundto10000(v1.distanceTo(v2));
+    double b = roundto10000(v2.distanceTo(v3));
+    double c = roundto10000(v3.distanceTo(v1));
     if (a == b) {
       if (a == c) {
         return "equilateral";
@@ -60,8 +60,8 @@ public class Triangle {
     else {v3 = p;}
   }
   public String toString() {
-    String output = "v1(" + v1.getX() + "," + v1.getY() + ")\t";
-    output += "v2(" + v2.getX() + "," + v2.getY() + ")\t";
+    String output = "v1(" + v1.getX() + "," + v1.getY() + ") ";
+    output += "v2(" + v2.getX() + "," + v2.getY() + ") ";
     return output + "v3(" + v3.getX() + "," + v3.getY() + ")";
   }
 }
