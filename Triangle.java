@@ -50,13 +50,13 @@ public class Triangle {
   }
 
   public Point getPoint(int x) {
-    if (x == 1) {return v1;}
-    else if (x == 2) {return v2;}
+    if (x == 0) {return v1;}
+    else if (x == 1) {return v2;}
     else {return v3;}
   }
   public void setVertex(int x, Point p) {
-    if (x == 1) {v1 = p;}
-    else if (x == 2) {v2 = p;}
+    if (x == 0) {v1 = p;}
+    else if (x == 1) {v2 = p;}
     else {v3 = p;}
   }
   public String toString() {
